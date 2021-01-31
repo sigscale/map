@@ -1,0 +1,16 @@
+@copyright 2021 SigScale Global Inc.
+@version %VERSION%
+@title %DESCRIPTION%
+@reference <a href="https://www.etsi.org/deliver/etsi_ts/129000_129099/129002/16.01.00_60/ts_129002v160100p.pdf">
+Mobile Application Part (MAP) Specification (3GPP TS 29.002 version 16.1.0 Release 16)</a>
+
+@doc This application implements a MAP protocol CODEC.
+
+==Introduction==
+
+==Installation==
+
+==Operation==
+
+==Configuration==
+

@@ -1,0 +1,8 @@
+{application, %APP_NAME%,
+	[{description, "Mobile Application Part (MAP) protocol stack"},
+		{vsn, "%APP_VERSION%"},
+		{modules,
+				[map_codec]},
+		{registered, []},
+		{applications, [asn1]},
+		{env, []}]}.

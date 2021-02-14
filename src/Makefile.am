@@ -45,8 +45,12 @@ einclude_DATA = MAP-CommonDataTypes.hrl \
 		MAP-ApplicationContexts.hrl \
 		MobileDomainDefinitions.hrl
 
+ASNCFLAGS = $(ERLCFLAGS) \
+		-I ${ERLANG_LIB_DIR_tcap}/asn_src \
+		+ber +noobj
+
 %.erl %.hrl: $(top_srcdir)/asn_src/%.asn1
-	$(ERLC) $(ERLCFLAGS) +ber +noobj $<
+	$(ERLC) $(ASNCFLAGS) +ber +noobj $<
 
 CLEANFILES = $(erl_DATA) \
 		$(einclude_DATA) \

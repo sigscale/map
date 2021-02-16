@@ -28,5 +28,5 @@
 				'MAP-OperationAndMaintenanceOperations',
 				'MobileDomainDefinitions']},
 		{registered, []},
-		{applications, [asn1]},
+		{applications, []},
 		{env, []}]}.

@@ -28,5 +28,5 @@
 				'MAP-OperationAndMaintenanceOperations',
 				'MobileDomainDefinitions']},
 		{registered, []},
-		{applications, [tcap]},
+		{included_applications, [tcap]},
 		{env, []}]}.

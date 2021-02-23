@@ -28,5 +28,5 @@
 				'MAP-OperationAndMaintenanceOperations',
 				'MobileDomainDefinitions']},
 		{registered, []},
-		{included_applications, [tcap]},
-		{env, []}]}.
+		{applications, [kernel, stdlib]},
+		{runtime_depencies, ["tcap-1.0.1"]}]}.

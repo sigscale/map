@@ -52,6 +52,13 @@ ASNCFLAGS = $(ERLCFLAGS) \
 %.erl %.hrl: $(top_srcdir)/asn_src/%.asn1
 	$(ERLC) $(ASNCFLAGS) +ber +noobj $<
 
+MAP-MS-DataTypes.erl MAP-MS-DataTypes.hrl: \
+		$(top_srcdir)/asn_src/MAP-MS-DataTypes.asn1
+	$(ERLC) $(ASNCFLAGS) +ber +noobj $<
+	sed -e "/^-record('LocationInformationGPRS'/,/^})\./d" \
+		MAP-MS-DataTypes.hrl > MAP-MS-DataTypes.hrl.tmp
+	mv MAP-MS-DataTypes.hrl.tmp MAP-MS-DataTypes.hrl
+
 CLEANFILES = $(erl_DATA) \
 		$(einclude_DATA) \
 		*.asn1db

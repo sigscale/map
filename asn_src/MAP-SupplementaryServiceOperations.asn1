@@ -20,7 +20,7 @@ DEFINITIONS ::= BEGIN
 	IMPORTS
 		OPERATION
 	FROM Remote-Operations-Information-Objects
-			{joint-iso-itu-t(0) remote-operations(4) informationObjects(5) version1(0)}
+			{joint-iso-itu-t(2) remote-operations(4) informationObjects(5) version1(0)}
 		systemFailure,
 		dataMissing,
 		unexpectedDataValue,

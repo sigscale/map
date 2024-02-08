@@ -1,0 +1,28 @@
+#!/bin/false
+# Not a shell script!
+
+# Copy this file to ../map.build/README
+# Follow these instructions in that directory
+
+## Configure new build directory
+mkdir -p shell/lib
+ln -st shell/lib ../../$(ls -d ../tcap.build/shell/lib/tcap-*)
+
+## Make documentation and reports available
+mkdir -p ~/public_html/map
+ln -st ~/public_html/map ../../map.build/doc
+ln -st ~/public_html/map ../../map.build/test/log
+mv ~/public_html/map/log ~/public_html/map/test
+
+## Configure project
+ERLANG_INSTALL_LIB_DIR=$PWD/shell/lib ERL_LIBS=$PWD/shell/lib ../map/configure
+
+## Install in shell/lib and build a release package
+ERL_LIBS=$PWD/shell/lib make install
+
+## Validate, verify and test
+ERL_LIBS=$PWD/shell/lib make check
+
+## Scrub it clean
+ERL_LIBS=$PWD/shell/lib make distclean; rm -rf *.boot *.rel *.script *.tar.gz Makefile config.* map.rel doc ebin asn_src src include priv test stamp-h1 sys.config shell/lib/map-*
+

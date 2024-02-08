@@ -1,8 +1,8 @@
 #!/bin/false
 # Not a shell script!
 
-# Copy this file to ../map.build/README
-# Follow these instructions in that directory
+# Instructions for building in an adjacent directory
+# of the source directory (i.e. ../map.build)
 
 ## Configure new build directory
 mkdir -p shell/lib

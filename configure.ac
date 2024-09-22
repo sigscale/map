@@ -4,8 +4,8 @@
 ##
 ## Boilerplate:  standard boilerplate code
 ##
-AC_INIT([map], [1.0.2], [issues@sigscale.org])
-AC_COPYRIGHT([Copyright (c) 2021 SigScale Global Inc.])
+AC_INIT([map], [1.0.3], [issues@sigscale.org])
+AC_COPYRIGHT([Copyright (c) 2024 SigScale Global Inc.])
 AC_PREREQ(2.64)
 #AC_CONFIG_SRCDIR([src/map_app.erl])
 AC_CONFIG_HEADERS([config.h])

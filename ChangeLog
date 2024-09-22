@@ -1,3 +1,24 @@
+2024-09-22  Vance Shipley <vances@sigscale.org>
+
+	* include all application upgrade files in release package
+	* clarify build readme file
+	* build an erlang release package
+	* add build instructions
+	* include debug information in beam
+	* correct oid in import
+	* trim junk after end
+	* require stdlib 3.5 or greater
+	* application description
+	* 3gpp copyright license
+	* remove record definition shadowed in cap datatypes
+	* add runtime dependency on tcap
+	* move library applications to included application in app specification
+	* add necessary runtime dependency
+	* removed unecessary runtime dependency
+	* cflags for asn compiler
+	* install asn.1 modules
+
+
 2021-02-11  Vance Shipley <vances@sigscale.org>
 
 	* initial version 1.0.0

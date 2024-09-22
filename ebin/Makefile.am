@@ -3,8 +3,8 @@
 ## Process this file with automake to produce Makefile.in
 
 appdir = $(beamdir)
-app_DATA = map.app
-EXTRA_DIST = map.app
+app_DATA = map.app map.appup
+EXTRA_DIST = map.app map.appup
 
 beam_DATA = MAP-Protocol.beam \
 		MAP-CommonDataTypes.beam \

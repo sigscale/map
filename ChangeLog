@@ -1,3 +1,7 @@
+2024-09-23  Vance Shipley <vances@sigscale.org>
+
+	* remove runtime dependency on tcap
+
 2024-09-22  Vance Shipley <vances@sigscale.org>
 
 	* include all application upgrade files in release package
